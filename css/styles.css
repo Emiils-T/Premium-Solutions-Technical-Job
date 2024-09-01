@@ -17,10 +17,23 @@
     url("https://db.onlinewebfonts.com/t/d4d77772c32c53cda6724c33cca67436.ttf") format("truetype"),
     url("https://db.onlinewebfonts.com/t/d4d77772c32c53cda6724c33cca67436.svg#Booster Next FY Regular") format("svg");
 }
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-p { font-size: 1.1rem; }
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
 body, html {
     font-size: 16px;
     margin: 0;
@@ -31,16 +44,28 @@ body, html {
     overflow-y: auto;
     color: #6E6E70;
 }
+
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-section {
+    width: 50%;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
 }
+
 .hero-container {
     position: relative;
     top: 0;
@@ -72,7 +97,7 @@ body, html {
     top: 0;
     left: 38%;
     transform: translateX(-50%);
-    /*height: 60px;*/
+    width: 18%;
     z-index: 2;
 }
 
@@ -89,7 +114,6 @@ body, html {
     top: 0;
     right: 0;
     width: 33%;
-    /*height: 100px;*/
 }
 
 .top-right-image {
@@ -136,7 +160,6 @@ body, html {
     position: fixed;
     top: 0;
     width: 350px;
-    height: 55%;
     display: none;
     background-color: white;
     z-index: 99;
@@ -159,7 +182,7 @@ body, html {
     background: none;
     border: none;
     cursor: pointer;
-    margin: 5px 0 5px 0;
+    margin: 1.2rem 0 2rem 0;
 }
 
 
@@ -187,7 +210,7 @@ body, html {
 
 .content {
     position: absolute;
-    top: 4%;
+    top: 30%;
     left: 55%;
     max-width: 25%;
     z-index: 2;
@@ -244,34 +267,38 @@ p {
 
 .service-item {
     display: flex;
-    align-items: flex-start;
-    text-align: left;
-    padding: 1%;
     margin-bottom: 20px;
     background-color: #f4f8fb;
     border-radius: 20px;
+
+    width: 100%;
+}
+
+.service-content {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .icon-and-title {
     display: flex;
+    flex: 2;
     flex-direction: column;
-    align-items: flex-start;
-    margin-right: 7%;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .service-item img {
-    /*width: 170px;*/
+    max-width: 100%;
     padding: 10%;
     margin-bottom: 5px;
 }
 
 .service-item h3 {
     font-weight: normal;
-    font-size: 129%;
+    font-size: 25px;
     text-align: center;
     color: #6E6E70;
-    width: max-content;
-    padding-left: 20%;
 }
 
 .service-item h4 {
@@ -284,7 +311,7 @@ p {
     font-family: "Booster Next FY Regular", sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .about-us {
@@ -355,7 +382,7 @@ p {
     left: -94px;
     width: 260px;
     height: 260px;
-    background-image: url('../images/about-us-circle.png');
+    background-image: url('/images/about-us-circle.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
@@ -384,7 +411,7 @@ p {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-image: url('../images/ball.png');
+    background-image: url('/images/ball.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -439,7 +466,7 @@ p {
 
 .testimonial-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 70vw;
     margin: 0 auto;
     padding: 30px 60px;
 
@@ -466,6 +493,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
 }
 
 .client-logo {
@@ -546,7 +574,7 @@ p {
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/form-graphic.png');
+    background-image: url('/images/form-graphic.png');
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 50% auto;
@@ -564,7 +592,8 @@ p {
 
 .contact-image {
     flex: 0 0 50%;
-    transform: translateY(4px);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .contact-image img {
@@ -684,6 +713,28 @@ input, textarea {
     font-size: 25px;
 }
 
+@media (max-width: 1260px) {
+    .client-testimonials {
+        flex-direction: column;
+    }
+
+    .content {
+        left: 0;
+        padding: 20px;
+        max-width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .hero-container {
+        width: 100%;
+    }
+
+    .top-right-image {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
 
     .top-right-image {
@@ -739,7 +790,14 @@ input, textarea {
     }
 
     .service-item {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item h3 {
+        padding-left: 0;
+        width: auto;
     }
 
     .icon-and-title {

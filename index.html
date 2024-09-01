@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <title>IS Services</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 <body>
-<div class="position-relative w-100 h-100 overflow-hidden" >
+<div class="position-relative w-100 h-100 overflow-hidden">
 
+    <div class="position-relative w-100 h-100">
         <div class="hero-container">
             <img class="hero-banner" src="images/hero-banner.png" alt="Hero Banner">
             <img class="logo" src="images/logo.png" alt="IS Services Logo">
         </div>
+
         <img class="language-selector" src="images/lv-language.png" alt="Language selector">
-
-
 
         <div class="top-right-container">
             <img class="top-right-image" src="images/image-3.png" alt="Top right image">
             <button class="hamburger-button" aria-label="Menu">
                 <img class="hamburger-icon" src="images/hamburger.svg" alt="">
             </button>
+
         </div>
         <div class="menu-overlay"></div>
         <nav class="hamburger-dropdown-menu">
-            <button class="close-button" aria-label="Close menu" >
+            <button class="close-button" aria-label="Close menu">
                 <img src="images/x.png" alt="close-button">
             </button>
             <ul>
@@ -43,7 +45,7 @@
             <p>Tavs personīgais konsultants informācijas tehnoloģiju un kiberdrošības jautājumos.</p>
             <button class="contact-btn">Sazinieties</button>
         </div>
-
+    </div>
 
 
     <div class="services-section">
@@ -53,7 +55,7 @@
                 <img src="images/cyber-security.png" alt="Cyber Security">
                 <h3>KIBERDROŠĪBA</h3>
             </div>
-            <div class="d-flex flex-column">
+            <div class="service-content">
                 <h4>Drošības un ielaušanās testi</h4>
                 <p>Drošības un ielaušanās testi publiskām un iekšējām IT/OT/IoT sistēmām; sociālās inženierijas
                     kampaņas; Open Source Intelligence (OSINT) datu vākšana un analīze</p>
@@ -69,7 +71,7 @@
         <div class="service-item">
             <div class="icon-and-title">
                 <img src="images/it-consult.png" alt="Consultation">
-                <h3>VADĪBAS<br>KONSULTĀCIJAS IT<br>JAUTĀJUMOS</h3>
+                <h3>VADĪBAS KONSULTĀCIJAS IT JAUTĀJUMOS</h3>
             </div>
             <div class="service-content">
                 <h4>Uzņēmuma / iestādes IT pārvaldības procesu uzlabošana</h4>
@@ -87,7 +89,7 @@
         <div class="service-item">
             <div class="icon-and-title">
                 <img src="images/service-admin.png" alt="Admin">
-                <h3>IT PROJEKTU<br>UZRAUDZĪBA UN<br>VADĪBA</h3>
+                <h3>IT PROJEKTU UZRAUDZĪBA UN VADĪBA</h3>
             </div>
             <div class="service-content">
                 <h4>Informācijas tehnoloģiju projektu uzraudzība</h4>
@@ -99,8 +101,6 @@
                     budžetā.</p>
             </div>
         </div>
-
-
     </div>
     <div class="contact-container">
         <button class="contact-btn">Sazinieties</button>
@@ -144,51 +144,51 @@
         </div>
     </section>
     <div class="container-fluid">
-    <section class="testimonial-container">
-        <h2>Mums uzticas</h2>
+        <section class="testimonial-container">
+            <h2>Mums uzticas</h2>
 
-        <div class="client-testimonials">
-            <div class="testimonial">
-                <img src="images/spirits-and-wine.png" alt="Sprite Award Logo" class="client-logo">
-                <h3>Mārtiņš Šulcs</h3>
-                <p>CEO Sprint & Wine</p>
-                <p class="testimonial-text">Pateicoties sadarbībai ar IS Services, uzņēmums Sprint & Wine ieguva
-                    mūsdienīgu IT pārvaldību un drošu, un efektīvu datu koplietošanas vidi ārpus uzņēmuma. Vērtīgu
-                    un IT nozarē akceptētu Viegli saprotamu un izmantojamu komunikācijas vidi starp vadību un
-                    uzņēmuma pie projektu sadalījuma.</p>
+            <div class="client-testimonials">
+                <div class="testimonial">
+                    <img src="images/spirits-and-wine.png" alt="Sprite Award Logo" class="client-logo">
+                    <h3>Mārtiņš Šulcs</h3>
+                    <p>CEO Sprint & Wine</p>
+                    <p class="testimonial-text">Pateicoties sadarbībai ar IS Services, uzņēmums Sprint & Wine ieguva
+                        mūsdienīgu IT pārvaldību un drošu, un efektīvu datu koplietošanas vidi ārpus uzņēmuma. Vērtīgu
+                        un IT nozarē akceptētu Viegli saprotamu un izmantojamu komunikācijas vidi starp vadību un
+                        uzņēmuma pie projektu sadalījuma.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/valmieras-novads.png" alt="Green Logo" class="client-logo">
+                    <h3>Atis Rudzītis</h3>
+                    <p>Vides aizsardzības un reģionālās attīstības ministrijas valsts sekretāra vietnieks</p>
+                    <p class="testimonial-text">2022.gadā sadarbībā ar IS Services veicām kiberdrošības testu izmantojot
+                        arī e-pastu pikšķerēšanas elementus un pēc tam veicām kopīgas lietotāju apmācības, kurā
+                        analizējām lietotāju uzvedību uz reakciju uz šīm viltus vēstulēm. Kopumā tieši šis reālais
+                        pikšķerēšanas tests deva vislielāko sapratni par reāliem draudiem lietotājiem, kas varētu notikt
+                        ja neuzmanīgi klikšķina uz saitēm vai dokumentiem saņemtajos e-pastos. Lietotāji iemācījās labāk
+                        atpazīt maskētus e-pastu sūtītājus un pielikumus. IS Services veica arī mūsu informācijas
+                        sistēmu dokumentācijas atbilstību MK 442. noteikumiem.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/visendorff.png" alt="Crown Logo" class="client-logo">
+                    <h3>Edmunds Visendorfs</h3>
+                    <p>SIA "VISENDORF" valdes loceklis</p>
+                    <p class="testimonial-text">Sadarbojamies ar SIA “IS Services” kopš 2011. gada.“IS Services” kā
+                        prioritārs sadarbības partneris un apakšuzņēmējs nozīmīgiem mūsu klientiem nodrošina plaša
+                        spektra IT pakalpojumus - ar IS drošību saistītas iekšējās izmeklēšanas, IT auditus, IT
+                        pakalpojumu vadību un kontroli, sniedz atbilstošus ziņojumus, atzinumus un konsultācijas.</p>
+                    <p class="testimonial-text">“IS Services” sniegtie pakalpojumi ir profesionāli, sistēmiski un
+                        precīzi, kā arī pamatoti ar detalizētām atskaitēm. Gan mēs, gan mūsu Klienti augstu vērtējam “IS
+                        Services” zināšanas, pieredzi un attieksmi un turpinām izmantot “IS Services” sniegtos
+                        pakalpojumus.</p>
+                </div>
             </div>
-            <div class="testimonial">
-                <img src="images/valmieras-novads.png" alt="Green Logo" class="client-logo">
-                <h3>Atis Rudzītis</h3>
-                <p>Vides aizsardzības un reģionālās attīstības ministrijas valsts sekretāra vietnieks</p>
-                <p class="testimonial-text">2022.gadā sadarbībā ar IS Services veicām kiberdrošības testu izmantojot
-                    arī e-pastu pikšķerēšanas elementus un pēc tam veicām kopīgas lietotāju apmācības, kurā
-                    analizējām lietotāju uzvedību uz reakciju uz šīm viltus vēstulēm. Kopumā tieši šis reālais
-                    pikšķerēšanas tests deva vislielāko sapratni par reāliem draudiem lietotājiem, kas varētu notikt
-                    ja neuzmanīgi klikšķina uz saitēm vai dokumentiem saņemtajos e-pastos. Lietotāji iemācījās labāk
-                    atpazīt maskētus e-pastu sūtītājus un pielikumus. IS Services veica arī mūsu informācijas
-                    sistēmu dokumentācijas atbilstību MK 442. noteikumiem.</p>
-            </div>
-            <div class="testimonial">
-                <img src="images/visendorff.png" alt="Crown Logo" class="client-logo">
-                <h3>Edmunds Visendorfs</h3>
-                <p>SIA "VISENDORF" valdes loceklis</p>
-                <p class="testimonial-text">Sadarbojamies ar SIA “IS Services” kopš 2011. gada.“IS Services” kā
-                    prioritārs sadarbības partneris un apakšuzņēmējs nozīmīgiem mūsu klientiem nodrošina plaša
-                    spektra IT pakalpojumus - ar IS drošību saistītas iekšējās izmeklēšanas, IT auditus, IT
-                    pakalpojumu vadību un kontroli, sniedz atbilstošus ziņojumus, atzinumus un konsultācijas.</p>
-                <p class="testimonial-text">“IS Services” sniegtie pakalpojumi ir profesionāli, sistēmiski un
-                    precīzi, kā arī pamatoti ar detalizētām atskaitēm. Gan mēs, gan mūsu Klienti augstu vērtējam “IS
-                    Services” zināšanas, pieredzi un attieksmi un turpinām izmantot “IS Services” sniegtos
-                    pakalpojumus.</p>
-            </div>
-        </div>
 
-        <div class="testimonial-nav">
-            <button class="prev">&lt;</button>
-            <button class="next">&gt;</button>
-        </div>
-    </section>
+            <div class="testimonial-nav">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+        </section>
     </div>
     <div class="container-fluid">
         <section class="footer-section">
@@ -198,8 +198,9 @@
                 </div>
             </div>
             <div class="form">
-                <h2> <span style="color:#13B1E7">Priecāsimies</span>  ar Jums sazināties!</h2>
-                <p>Lūdzu, aizpildiet pieteikuma formu vai rakstiet mums e-pastā, kā arī pieņemam Jūsu telefona zvanu.</p>
+                <h2><span style="color:#13B1E7">Priecāsimies</span> ar Jums sazināties!</h2>
+                <p>Lūdzu, aizpildiet pieteikuma formu vai rakstiet mums e-pastā, kā arī pieņemam Jūsu telefona
+                    zvanu.</p>
                 <form>
                     <div class="form-row">
                         <input type="text" placeholder="Vārds*">
@@ -215,36 +216,40 @@
                         <label for="consent">Piekrītu saņemt e-pastā nozares jaunumus un aktualitātes</label>
                     </div>
                     <div>
-                        <p class="privacy-policy" >Nosūtot šo ziņojumu Jūs piekrītat IS Services privātuma politikai</p>
+                        <p class="privacy-policy">Nosūtot šo ziņojumu Jūs piekrītat IS Services privātuma politikai</p>
                     </div>
                     <button class="form-button" type="submit">Sūtīt</button>
                 </form>
 
                 <div class="contact-info">
-                    <p>Tālr. LV:  +371 29 233 533</p>
+                    <p>Tālr. LV: +371 29 233 533</p>
                     <p>Tālr. EN un RU: +371 29 233 533, +351 964 712 686</p>
                     <p>Tālr. PT: +351 964 712 686</p>
-                    <p>E-pasts: <span style="color:#99B56F" >info@isservices.lv</span> </p>
+                    <p>
+                        E-pasts:
+                        <a style=" text-decoration: none;" href="mailto:info@isservices.lv">
+                            <span style="color:#99B56F"> info@isservices.lv</span>
+                        </a>
+                    </p>
                 </div>
             </div>
         </section>
     </div>
 
 
-
 </div>
 </body>
 <script>
-    document.querySelector('.hamburger-button').addEventListener('click', function() {
+    document.querySelector('.hamburger-button').addEventListener('click', function () {
         document.querySelector('.hamburger-dropdown-menu').classList.toggle('active');
         document.querySelector('.menu-overlay').classList.toggle('active');
     });
-    document.querySelector('.close-button').addEventListener('click', function() {
+    document.querySelector('.close-button').addEventListener('click', function () {
         document.querySelector('.hamburger-dropdown-menu').classList.remove('active');
         document.querySelector('.menu-overlay').classList.remove('active');
     });
 
-    document.querySelector('.menu-overlay').addEventListener('click', function() {
+    document.querySelector('.menu-overlay').addEventListener('click', function () {
         document.querySelector('.hamburger-dropdown-menu').classList.remove('active');
         this.classList.remove('active');
     });
